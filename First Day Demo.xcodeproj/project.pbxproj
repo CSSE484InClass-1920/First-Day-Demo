@@ -13,6 +13,9 @@
 		FD5530952417CE8000D1FCC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD5530932417CE8000D1FCC7 /* Main.storyboard */; };
 		FD5530972417CE8000D1FCC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD5530962417CE8000D1FCC7 /* Assets.xcassets */; };
 		FD55309A2417CE8000D1FCC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD5530982417CE8000D1FCC7 /* LaunchScreen.storyboard */; };
+		FD5530A22417D0FF00D1FCC7 /* ButtonsAndLabelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5530A12417D0FF00D1FCC7 /* ButtonsAndLabelsViewController.swift */; };
+		FD5530A42417D11000D1FCC7 /* TouchEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5530A32417D11000D1FCC7 /* TouchEventsViewController.swift */; };
+		FD5530A62417D11D00D1FCC7 /* StudentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5530A52417D11D00D1FCC7 /* StudentTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		FD5530962417CE8000D1FCC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD5530992417CE8000D1FCC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD55309B2417CE8000D1FCC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD5530A12417D0FF00D1FCC7 /* ButtonsAndLabelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsAndLabelsViewController.swift; sourceTree = "<group>"; };
+		FD5530A32417D11000D1FCC7 /* TouchEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchEventsViewController.swift; sourceTree = "<group>"; };
+		FD5530A52417D11D00D1FCC7 /* StudentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				FD5530962417CE8000D1FCC7 /* Assets.xcassets */,
 				FD5530982417CE8000D1FCC7 /* LaunchScreen.storyboard */,
 				FD55309B2417CE8000D1FCC7 /* Info.plist */,
+				FD5530A12417D0FF00D1FCC7 /* ButtonsAndLabelsViewController.swift */,
+				FD5530A32417D11000D1FCC7 /* TouchEventsViewController.swift */,
+				FD5530A52417D11D00D1FCC7 /* StudentTableViewController.swift */,
 			);
 			path = "First Day Demo";
 			sourceTree = "<group>";
@@ -140,7 +149,10 @@
 			files = (
 				FD5530922417CE8000D1FCC7 /* ViewController.swift in Sources */,
 				FD55308E2417CE8000D1FCC7 /* AppDelegate.swift in Sources */,
+				FD5530A62417D11D00D1FCC7 /* StudentTableViewController.swift in Sources */,
 				FD5530902417CE8000D1FCC7 /* SceneDelegate.swift in Sources */,
+				FD5530A22417D0FF00D1FCC7 /* ButtonsAndLabelsViewController.swift in Sources */,
+				FD5530A42417D11000D1FCC7 /* TouchEventsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
