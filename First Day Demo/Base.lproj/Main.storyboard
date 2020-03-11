@@ -92,26 +92,59 @@
             </objects>
             <point key="canvasLocation" x="68" y="-115"/>
         </scene>
-        <!--View Controller-->
+        <!--Buttons And Labels View Controller-->
         <scene sceneID="iyn-o9-75m">
             <objects>
-                <viewController id="jQt-CB-hga" sceneMemberID="viewController">
+                <viewController id="jQt-CB-hga" customClass="ButtonsAndLabelsViewController" customModule="First_Day_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q6O-Ds-ahU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hq3-2x-RmZ">
+                                <rect key="frame" x="138" y="280" width="138" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Increment"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Count = 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y1J-Ef-8yc">
+                                <rect key="frame" x="121" y="451" width="172" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eA5-bY-gQS">
+                                <rect key="frame" x="131" y="619" width="152" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Decrement"/>
+                                <connections>
+                                    <action selector="pressedDecrement:" destination="jQt-CB-hga" eventType="touchUpInside" id="9XP-wi-Hs7"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eA5-bY-gQS" firstAttribute="top" secondItem="Y1J-Ef-8yc" secondAttribute="bottom" constant="120" id="82n-o3-DTc"/>
+                            <constraint firstItem="Y1J-Ef-8yc" firstAttribute="top" secondItem="hq3-2x-RmZ" secondAttribute="bottom" constant="120" id="Ll3-ub-2AA"/>
+                            <constraint firstItem="hq3-2x-RmZ" firstAttribute="centerX" secondItem="rFK-XS-KLn" secondAttribute="centerX" id="Ubl-rx-dLI"/>
+                            <constraint firstItem="Y1J-Ef-8yc" firstAttribute="top" secondItem="hq3-2x-RmZ" secondAttribute="bottom" constant="120" id="YPE-ma-QgZ"/>
+                            <constraint firstItem="Y1J-Ef-8yc" firstAttribute="centerX" secondItem="rFK-XS-KLn" secondAttribute="centerX" id="aB3-Yj-gCP"/>
+                            <constraint firstItem="eA5-bY-gQS" firstAttribute="centerX" secondItem="Y1J-Ef-8yc" secondAttribute="centerX" id="eOX-UQ-0Yf"/>
+                            <constraint firstItem="Y1J-Ef-8yc" firstAttribute="centerY" secondItem="rFK-XS-KLn" secondAttribute="centerY" id="f6N-Pl-asq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="rFK-XS-KLn"/>
                     </view>
                     <navigationItem key="navigationItem" id="aSn-ln-JMh"/>
+                    <connections>
+                        <outlet property="counterLabel" destination="Y1J-Ef-8yc" id="sWe-uO-o5p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3TT-iu-vUj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1346" y="-628"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Student Table View Controller-->
         <scene sceneID="PS6-r1-daI">
             <objects>
-                <tableViewController id="Vkv-iZ-crl" sceneMemberID="viewController">
+                <tableViewController id="Vkv-iZ-crl" customClass="StudentTableViewController" customModule="First_Day_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="GIu-mt-oRM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -137,10 +170,10 @@
             </objects>
             <point key="canvasLocation" x="1254" y="256"/>
         </scene>
-        <!--View Controller-->
+        <!--Touch Events View Controller-->
         <scene sceneID="xfg-UD-EFI">
             <objects>
-                <viewController id="NE7-ab-cGx" sceneMemberID="viewController">
+                <viewController id="NE7-ab-cGx" customClass="TouchEventsViewController" customModule="First_Day_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LNe-0u-C8L">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
